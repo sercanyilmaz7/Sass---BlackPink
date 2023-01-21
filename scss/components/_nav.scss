@@ -1,0 +1,38 @@
+
+
+.nav{
+    // border: 2px solid red;
+    height: 10vh;
+    padding: 1rem;
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__item{
+        text-decoration: none;
+        list-style-type: none;    
+        padding: 1rem 2rem;
+    }
+
+    &__link{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: $font-family;
+        // transition: all 1s;
+        @include transition(1s);
+
+
+        &:hover{
+            color:red;
+        }
+        &--active{
+            color: rgb(253, 3, 241);
+        }
+    }
+
+
+}
